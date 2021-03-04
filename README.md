@@ -1,3 +1,12 @@
+# Contribute
+Fork this repo and make updates then create a PR with what you updated and I will merge as quickly as possible. Make sure to `git pull` before working on your changes.\
+Here's a quick tutorial on basic git contribution: https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
+
+# Plans
+Use [confetti-js](https://www.npmjs.com/package/confetti-js)\
+Look at admissions portal and use same css and html as "Update to Admissions".\
+The redirect link will show everyone's name and (a quote maybe???)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

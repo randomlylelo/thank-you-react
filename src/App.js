@@ -1,4 +1,4 @@
-function App() {
+export default function App() {
   return (
     // Title Bar
     <div className="bg-background p-2.5">
@@ -10,4 +10,3 @@ function App() {
   );
 }
 
-export default App;

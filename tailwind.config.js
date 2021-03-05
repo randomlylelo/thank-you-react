@@ -39,6 +39,7 @@ module.exports = {
       2.5: '0.625rem',
       3: '0.75rem',
       3.5: '0.875rem',
+      3.75: '0.9375rem',
       4: '1rem',
       5: '1.25rem',
       6: '1.5rem',
@@ -53,6 +54,7 @@ module.exports = {
       16: '4rem',
       20: '5rem',
       24: '6rem',
+      25: '6.25rem',
       28: '7rem',
       32: '8rem',
       36: '9rem',
@@ -182,6 +184,11 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      headerPc: [
+        'ThatBook',
+        'Times',
+        'serif',
+      ],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1.2' }],
@@ -192,6 +199,7 @@ module.exports = {
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
       '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
       '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+      '40px': ['2.375rem', { lineHeight: '2.5rem' }],
       '5xl': ['3rem', { lineHeight: '1' }],
       '6xl': ['3.75rem', { lineHeight: '1' }],
       '7xl': ['4.5rem', { lineHeight: '1' }],
@@ -667,6 +675,7 @@ module.exports = {
     width: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
+      '1000': '1000px',
       '1/2': '50%',
       '1/3': '33.333333%',
       '2/3': '66.666667%',

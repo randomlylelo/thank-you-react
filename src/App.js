@@ -1,8 +1,6 @@
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
+    <div className="text-center bg-gray-700">
       <div>
         test
       </div>

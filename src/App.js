@@ -18,6 +18,13 @@ export default function App() {
             </a>
           </div>
         </div>
+        {/* Hidden makes the thing hidden on mobile so afterwards no need for xl. Would probs be a good idea to do it but im lazy */}
+        <div className="hidden xl:block float-right pt-3.75">
+          {/* Home Links */}
+          <div className=" text-right pb-2.5 uppercase font-bold text-sm pr-2 h-4.5 text-links">
+              <a href="http://www.admissions.caltech.edu/">Caltech Admissions Home</a>
+          </div>
+        </div>
       </div>
       {/* Content aka middle white part */}
       <div className=""></div>

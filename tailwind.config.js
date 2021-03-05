@@ -17,6 +17,7 @@ module.exports = {
       current: 'currentColor',
       graySmall: '#666666',
       grayPc: '#333333',
+      links: '#d8d8d8',
 
       black: colors.black,
       white: colors.white,
@@ -41,6 +42,7 @@ module.exports = {
       3.5: '0.875rem',
       3.75: '0.9375rem',
       4: '1rem',
+      4.5: '1.125rem',
       5: '1.25rem',
       6: '1.5rem',
       7: '1.75rem',
@@ -192,7 +194,7 @@ module.exports = {
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1.2' }],
-      sm: ['0.875rem', { lineHeight: '1.25rem' }],
+      sm: ['0.875rem', { lineHeight: '1.2' }],
       base: ['1rem', { lineHeight: '1.5rem' }],
       lg: ['1.125rem', { lineHeight: '1.75rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],

@@ -6,7 +6,7 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
     {/* Set Default Font */}
-    <div className="font-custom">
+    <div className="font-sans">
       <App />
     </div>
   </React.StrictMode>,

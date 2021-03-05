@@ -5,7 +5,10 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* Set Default Font */}
+    <div className="font-custom">
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

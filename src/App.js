@@ -24,6 +24,17 @@ export default function App() {
           <div className=" text-right pb-2.5 uppercase font-bold text-sm pr-2 h-4.5 text-links">
               <a href="http://www.admissions.caltech.edu/">Caltech Admissions Home</a>
           </div>
+          {/* "Header? Label for persons name" */}
+          <div className="relative top-5">
+            <div className="block">
+              <ul className="">
+                <li>
+                  <span className="text-white text-xs">AOs</span>
+                  <a href="https://youtu.be/dQw4w9WgXcQ" className="text-xxs pl-1.25 text-linkRed visited:text-linkBlue">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       {/* Content aka middle white part */}

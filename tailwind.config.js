@@ -18,6 +18,8 @@ module.exports = {
       graySmall: '#666666',
       grayPc: '#333333',
       links: '#d8d8d8',
+      linkRed: '#ff6c0c',
+      linkBlue: '#00f',
 
       black: colors.black,
       white: colors.white,
@@ -35,6 +37,7 @@ module.exports = {
       0: '0px',
       0.5: '0.125rem',
       1: '0.25rem',
+      1.25: '0.3125rem',
       1.5: '0.375rem',
       2: '0.5rem',
       2.5: '0.625rem',
@@ -193,6 +196,7 @@ module.exports = {
       ],
     },
     fontSize: {
+      xxs: ['0.625rem', { lineHeight: '1.2' }],
       xs: ['0.75rem', { lineHeight: '1.2' }],
       sm: ['0.875rem', { lineHeight: '1.2' }],
       base: ['1rem', { lineHeight: '1.5rem' }],
@@ -835,7 +839,7 @@ module.exports = {
     strokeWidth: ['responsive'],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
+    textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'visited'],
     textDecoration: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOverflow: ['responsive'],

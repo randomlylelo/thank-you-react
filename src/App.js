@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 
 
 export default function App() {
@@ -26,21 +26,6 @@ export default function App() {
     }, 3000);
   }, []);
   */
-
-
- 
-
-  
-
-  
-
-
-
-  
-
-  
-    
-
 
   //  We using xl for switch into responsive. XL is 1280px
   return (
@@ -125,11 +110,7 @@ export default function App() {
 
         <div className="xl:h-60 xl:w-96 h-32 w-56 bg-orange xl:text-7xl text-3xl shadow-2xl rounded-lg my-3 flex justify-center items-center">
           <h1 className="text-center">{greetings[index].title}</h1>
-        </div>
-
-      
-
-        
+        </div>        
       </div>
       */}
       

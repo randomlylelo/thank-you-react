@@ -1,8 +1,36 @@
+//import { useEffect, useState } from "react";
+
+
 export default function App() {
+
+
+  /* Ignore
+  const greetings = [
+    {id:1, title:"Thankyou"},
+    {id:2, title:"For"},
+    {id:3, title:"All Of Your Hard Work"}
+  ];
+
+  const [index, setIndexVal] = useState(0);
+  useEffect(() => {
+    setInterval(() => {
+      setIndexVal((prevIndex) => {
+        if(prevIndex === 2) {
+          return 0;
+        } else {
+          return prevIndex += 1;
+        }
+      })
+
+    
+    }, 3000);
+  }, []);
+  */
+
   //  We using xl for switch into responsive. XL is 1280px
   return (
     // Container
-    <div className="xl:w-1000 xl:block xl:m-auto">
+    <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc">
       {/* Skip, DESKTOP ONLY */}
       <div className="xl:h-13 xl:w-full" />
       {/* Title Bar */}
@@ -38,7 +66,61 @@ export default function App() {
         </div>
       </div>
       {/* Content aka middle white part */}
-      <div className=""></div>
+
+      <div className="xl:w-1000 xl:m-auto p-3.75 h-full xl:bg-white">
+        <div>
+          <h1 className="font-bold fontFamily-sans text-lg">Thank You Status for All Faculty</h1>
+          
+          <div className="flex flex-col items-center">
+            <div className="xl:w-3/4 w-full h-56 bg-orange shadow-2xl my-3 flex justify-center items-center">
+              <div className="xl:text-7xl text-4xl text-white">
+                <h1 className="text-center">Caltech Prefrosh</h1>
+              </div>
+              <div className="text-2xl mx-3">
+                <h3>Hopes you accept our offer of gratitude!</h3>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+
+        <div className="text-md font-bold bg-greenHeader my-2.5">
+          <h2>CALTHANKS FACULTY PORTAL</h2>
+        </div>
+
+        <div>
+          <h3 className="font-bold">Status Update</h3>
+          <h4>An update to your application was last posted on March 20, 2021</h4>
+          <a className="text-orange" href="/">View Update >> </a>
+        </div>
+
+        
+        
+      </div>
+      
+      {/* Ignore
+      <div id="my-canvas" className="xl:w-1000 bg-white flex flex-col items-center font-headerPc font-bold text-white">
+        <div className="xl:h-60 xl:w-96 h-32 w-56 bg-orange xl:text-7xl text-3xl shadow-2xl rounded-lg my-3 flex justify-center items-center">
+          <h1 className="text-center">{greetings[index].title}</h1>
+        </div>
+
+        <div className="xl:h-60 xl:w-96 h-32 w-56 bg-orange xl:text-7xl text-3xl shadow-2xl rounded-lg my-3 flex justify-center items-center">
+          <h1 className="text-center">{greetings[index].title}</h1>
+        </div>
+
+        <div className="xl:h-60 xl:w-96 h-32 w-56 bg-orange xl:text-7xl text-3xl shadow-2xl rounded-lg my-3 flex justify-center items-center">
+          <h1 className="text-center">{greetings[index].title}</h1>
+        </div>        
+      </div>
+      */}
+      
+      
     </div>
   );
+
+  
+
+
+
+
 }

@@ -30,6 +30,7 @@ export default function App() {
   //  We using xl for switch into responsive. XL is 1280px
   return (
     // Container
+    // Remove "xl:h-screen" if you add more info and the background messes up or smthing not sure.
     <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc xl:h-screen">
       {/* Skip, DESKTOP ONLY */}
       <div className="xl:h-13 xl:w-full" />

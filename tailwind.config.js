@@ -22,6 +22,7 @@ module.exports = {
       linkBlue: '#00f',
       orange: '#ff6c0c',
       greenHeader: '#9DAE88',
+      lightGray: '#eeeeee',
 
       black: colors.black,
       white: colors.white,

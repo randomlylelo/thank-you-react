@@ -65,8 +65,8 @@ export default function App() {
           </div>
         </div>
       </div>
-      {/* Content aka middle white part */}
 
+      {/* Content aka middle white part */}
       <div className="xl:w-1000 xl:m-auto p-3.75 h-full xl:bg-white">
         <div>
           <h1 className="font-bold fontFamily-sans text-lg">Thank You Status for All Faculty</h1>
@@ -91,13 +91,20 @@ export default function App() {
         <div>
           <h3 className="font-bold">Status Update</h3>
           <h4>An update to your application was last posted on March 20, 2021</h4>
-          <a className="text-orange" href="/">View Update >> </a>
+          <a className="text-orange" href="/">View Update &gt;&gt; </a>
         </div>
-
-        
-        
       </div>
       
+      {/* Footer */}
+      <footer className="hidden xl:block pt-2.5">
+        <p className="pb-2.5 text-xxs uppercase text-lightGray">
+          California Institute of Technology
+          <br />
+          1200 E California Blvd, Pasadena CA 91125
+          <br />
+          <br />
+        </p>
+      </footer>
       {/* Ignore
       <div id="my-canvas" className="xl:w-1000 bg-white flex flex-col items-center font-headerPc font-bold text-white">
         <div className="xl:h-60 xl:w-96 h-32 w-56 bg-orange xl:text-7xl text-3xl shadow-2xl rounded-lg my-3 flex justify-center items-center">

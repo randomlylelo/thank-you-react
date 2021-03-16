@@ -57,7 +57,7 @@ export default function App() {
             <div className="block">
               <ul className="">
                 <li>
-                  <span className="text-white text-xs">AOs</span>
+                  <span className="text-white text-xs">You :)</span>
                   <a href="https://youtu.be/dQw4w9WgXcQ" className="text-xxs pl-1.25 text-linkRed visited:text-linkBlue">Logout</a>
                 </li>
               </ul>
@@ -67,9 +67,10 @@ export default function App() {
       </div>
 
       {/* Content aka middle white part */}
-      <div className="xl:w-1000 xl:m-auto p-3.75 h-full xl:bg-white">
+      <div className="xl:w-1000 xl:m-auto p-2.5 h-full xl:bg-white">
         <div>
-          <h1 className="font-bold fontFamily-sans text-lg">Thank You Status for All Faculty</h1>
+          {/* I have to do xl bc website uses 1.5em, but I don't have default text saved so 1.25rem is clsoe enough. */}
+          <h1 className="font-bold fontFamily-sans text-xl mb-2.5">Thank You Status for All Faculty</h1>
           
           <div className="flex flex-col items-center">
             <div className="xl:w-3/4 w-full h-56 bg-orange shadow-2xl my-3 flex justify-center items-center">
@@ -85,7 +86,7 @@ export default function App() {
         </div>
 
         <div className="text-md font-bold bg-greenHeader my-2.5">
-          <h2>CALTHANKS FACULTY PORTAL</h2>
+          <h2 className="pl-1 xl:text-grayPc">CALTHANKS FACULTY PORTAL</h2>
         </div>
 
         <div>

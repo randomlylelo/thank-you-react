@@ -30,7 +30,7 @@ export default function App() {
   //  We using xl for switch into responsive. XL is 1280px
   return (
     // Container
-    <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc">
+    <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc xl:h-screen">
       {/* Skip, DESKTOP ONLY */}
       <div className="xl:h-13 xl:w-full" />
       {/* Title Bar */}
@@ -67,7 +67,7 @@ export default function App() {
       </div>
 
       {/* Content aka middle white part */}
-      <div className="xl:w-1000 xl:m-auto p-2.5 h-full xl:bg-white">
+      <div className="xl:w-1000 xl:m-auto p-2.5 xl:bg-white">
         <div>
           {/* I have to do xl bc website uses 1.5em, but I don't have default text saved so 1.25rem is clsoe enough. */}
           <h1 className="font-bold fontFamily-sans text-xl mb-2.5">Thank You Status for All Faculty</h1>

@@ -1,4 +1,4 @@
-export default function(config) {
+export default function confetti(config) {
     function Vector2(_x, _y) {
         this.x = _x;
         this.y = _y;
@@ -11,7 +11,7 @@ export default function(config) {
         }
         ;
         this.Equals = function(_vec0, _vec1) {
-            return _vec0.x == _vec1.x && _vec0.y == _vec1.y
+            return _vec0.x === _vec1.x && _vec0.y === _vec1.y
         }
         ;
         this.Add = function(_vec) {
@@ -36,7 +36,7 @@ export default function(config) {
         ;
         this.Normalize = function() {
             var sqrLen = this.SqrLength(), factor;
-            if(sqrLen != 0) {
+            if(sqrLen !== 0) {
                 factor = 1 / Math.sqrt(sqrLen)
                 this.x *= factor
                 this.y *= factor
@@ -74,9 +74,9 @@ export default function(config) {
             var totalForce = new Vector2(this.force.x,this.force.y)
               , speed = this.velocity.Length()
               , dragVel = new Vector2(this.velocity.x,this.velocity.y);
-            return dragVel.Mul(this.drag * this.mass * speed),
-            totalForce.Sub(dragVel),
-            totalForce
+            dragVel.Mul(this.drag * this.mass * speed)
+            totalForce.Sub(dragVel)
+            return totalForce
         }
     }
     function ConfettiPaper(_x, _y) {
@@ -203,7 +203,7 @@ export default function(config) {
                     _g.fillStyle = this.backColor
                     _g.strokeStyle = this.backColor
                 }
-                if(i == 0) {
+                if(i === 0) {
                     _g.beginPath()
                     _g.moveTo(this.particles[i].position.x, this.particles[i].position.y)
                     _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y)
@@ -218,7 +218,7 @@ export default function(config) {
                     _g.closePath()
                     _g.stroke()
                     _g.fill()
-                } else if(i == this.particleCount - 2) {
+                } else if(i === this.particleCount - 2) {
                     _g.beginPath()
                     _g.moveTo(this.particles[i].position.x, this.particles[i].position.y)
                     _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y)
@@ -255,7 +255,6 @@ export default function(config) {
     var frameRate = 30
       , dt = 1 / frameRate
       , DEG_TO_RAD = Math.PI / 180
-      , RAD_TO_DEG = 180 / Math.PI
       , colors = config.colors;
     colors == null && (colors = [["#df0049", "#660671"], ["#00e857", "#005291"], ["#2bebbc", "#05798a"], ["#ffd200", "#b06c00"]]);
     Vector2.Lerp = function(_vec0, _vec1, _t) {
@@ -329,7 +328,6 @@ export default function(config) {
         ;
         this.start = function() {
             this.stop();
-            var context = this;
             this.interval = setInterval(function() {
                 confetti.update()
             }, 1e3 / frameRate)

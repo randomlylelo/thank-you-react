@@ -45,7 +45,7 @@ export default function confetti(config) {
         ;
         this.Normalized = function() {
             var sqrLen = this.SqrLength(), factor;
-            return sqrLen != 0 ? (factor = 1 / Math.sqrt(sqrLen),
+            return sqrLen !== 0 ? (factor = 1 / Math.sqrt(sqrLen),
             new Vector2(this.x * factor,this.y * factor)) : new Vector2(0,0)
         }
     }

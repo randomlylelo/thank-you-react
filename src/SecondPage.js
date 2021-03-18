@@ -1,9 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
 import {TopBar, BottomBar} from "../src/layout";
-=======
 import confetti from "./confetti.js";
->>>>>>> d8dcd523f86cb1eef0a795ad04349aa7f5f20d5b
 
 export default function SecondPage() {
   React.useEffect(() => {

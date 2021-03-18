@@ -15,6 +15,7 @@ export default function Home() {
     {title:"WHAT'S NEXT", header:"Status Update", content:"An update to your application was last posted on March 20, 2021", page:"/thankyou", navTitle:"View Update >>"}
   ]
 
+  /*Middle Section Checklist Details/Items */
   var checkItems = [
     {name:"One", status:"Recieved", date:"02/12/2021"},
     {name:"One", status:"Recieved", date:"02/12/2021"},

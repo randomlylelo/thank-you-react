@@ -49,7 +49,7 @@ export class TopBar extends Component {
 export class BottomBar extends Component {
     render(props) {
         return(
-            <div className="w-full xl:bg-grayPc">
+            <div>
                 <div>
                     <footer className="hidden xl:block pt-2.5">
                         <p className="pb-2.5 text-xxs uppercase text-lightGray">

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
+import checkPng from "../src/check.png";
 
 export class TopBar extends Component {
     render() {
@@ -136,6 +137,45 @@ class InfoSection extends Component {
     }
 }
 
+export class CheckList extends Component {
+    render() {
+
+        var checkList = this.props.checkList.map(function(item) {
+            return(
+                <tr className="w-full">
+                    <td className="w-1/20 px-2 border-b-2">
+                        <img src={checkPng} alt=""/>
+                    </td>
+                    <td className="w-1/10 px-3 border-b-2">
+                        {item.status}
+                    </td>
+                    <td className="w-3/4 px-3 border-b-2">
+                        {item.name}
+                    </td>
+                    <td className="w-1/10 px-6 border-b-2">
+                        {item.date}
+                    </td>
+                </tr>
+                
+            );
+        });
+
+        return(
+            <div className="shadow-md font-sans w-full">
+                <table>
+                    <tr className="bg-lightGray w-full border-b-2">
+                        <td className="w-0"></td>
+                        <td className="w-3/20 px-0">Status</td>
+                        <td className="w-3/4 px-3">Details</td>
+                        <td className="w-1/10 px-6">Date</td>
+                    </tr>
+                    {checkList}
+                </table>
+            </div>
+        );
+    }
+}
+
 export class MidSection extends Component {
 
     
@@ -154,6 +194,8 @@ export class MidSection extends Component {
                     <Banner bannerList={this.props.bannerLabels}/>
 
                     <InfoSection infoList={this.props.infoArray}/>
+
+                    <CheckList checkList={this.props.checkItems}/>
                     
                 </div>
 

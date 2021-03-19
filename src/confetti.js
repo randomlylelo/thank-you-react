@@ -363,5 +363,7 @@ export default function confetti(config) {
         window.removeEventListener('resize', confetti.resize)
     }, config.timeout * 1e3);
     window.addEventListener('resize', confetti.resize)
+
+    return confetti.clear.bind(confetti);
 };
 

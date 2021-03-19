@@ -4,7 +4,10 @@ import confetti from "./confetti.js";
 
 export default function SecondPage() {
   React.useEffect(() => {
-      confetti({ colors: [ [ '#fe8c00', '#ffffff' ], [ '#fe8c00', '#ffffff' ] ], timeout: 25 });
+      
+      const stop = confetti({ colors: [ [ '#fe8c00', '#ffffff' ], [ '#fe8c00', '#ffffff' ] ], timeout: 25 });
+
+      return stop;
   }, []);
   return (
     <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc xl:h-screen">

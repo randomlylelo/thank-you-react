@@ -190,8 +190,8 @@ export class MidSection extends Component {
                     <h1 className="font-bold fontFamily-sans text-xl mb-2.5">
                         {this.props.title}
                     </h1>
-                    
-                    <div className="hidden xl:block">
+
+                    <div className="hidden xl:flex items-center justify-center">
                         {this.props.video}
                     </div>
                     

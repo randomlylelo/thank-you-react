@@ -1,7 +1,7 @@
 // import { useEffect, useState } from "react";
 import React from "react";
 import { TopBar, BottomBar, MidSection } from "../src/layout";
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/youtube'
 
 export default function Home() {
   /*Middle Section Banner Labels */
@@ -24,6 +24,8 @@ export default function Home() {
     {name:"One", status:"Recieved", date:"02/12/2021"},
   ];
 
+  let video =  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/>
+
   //  We using xl for switch into responsive. XL is 1280px
   return (
     
@@ -35,7 +37,7 @@ export default function Home() {
       {/* Skip, DESKTOP ONLY */}
       <div className="xl:h-12 xl:w-full" />
       <TopBar/>
-      <MidSection bannerLabels={lbls} infoArray={info} checkItems={checkItems} title="Application Status for All Faculty" />
+      <MidSection bannerLabels={lbls} infoArray={info} checkItems={checkItems} title="Application Status for All Faculty" video={video} />
       <BottomBar name="California Institute of Technology" address="1200 E California Blvd, Pasadena CA 91125"/>
     </div>
           

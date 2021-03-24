@@ -191,6 +191,10 @@ export class MidSection extends Component {
                         {this.props.title}
                     </h1>
                     
+                    <div className="hidden xl:block">
+                        {this.props.video}
+                    </div>
+                    
                     <Banner bannerList={this.props.bannerLabels}/>
 
                     <InfoSection infoList={this.props.infoArray}/>

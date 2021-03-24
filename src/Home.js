@@ -12,7 +12,17 @@ export default function Home() {
 
   /*Middle Section Information Info */
   let info = [
-    {title:"CALTHANKS FACULTY PORTAL", header:"Welcome", content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis ex. Nulla a elit non nunc cursus sodales in vel nulla. Aenean fermentum ex pellentesque, gravida diam id, scelerisque mi. Duis rutrum iaculis tristique. Ut elementum velit vitae dolor pulvinar accumsan. Phasellus convallis ornare ornare. Proin gravida condimentum interdum. Nullam iaculis, mauris at gravida pharetra, enim erat maximus est, sed euismod orci sem at nulla. Mauris consequat nec eros a vestibulum. Vivamus metus justo, malesuada aliquet imperdiet id, volutpat eget tellus. Mauris lacus quam, auctor non lacus venenatis, sagittis scelerisque nibh. Nam lobortis nisl et mi suscipit pharetra. Nunc laoreet, nisi eu imperdiet ullamcorper, libero sem tempor metus, non dapibus dolor urna quis massa. Mauris pellentesque enim lectus, at venenatis neque ullamcorper nec. Vestibulum luctus velit sit amet dui letius, vitae ornare purus facilisis. Donec dictum magna neque, vestibulum eleifend sapien eleifend vel. Aenean accumsan leo at maximus viverra. Praesent id accumsan ipsum, ut tristique ligula."},
+    {title:"CALTHANKS FACULTY PORTAL", header:"Welcome", content:
+    `Your Caltech Applicant Portal is your secure hub throughout your application process. Through this hub, you will:
+    
+    Help us keep our staff safe and remote by minimizing the materials sent by mail.
+    
+    Submit new/updated information
+    Upload supplemental materials for your application
+    Track our receipt of your required application materials
+    View your admissions decision
+     
+The Caltech Admissions Office will not share information about your application by phone or email. Your Caltech Applicant Portal is your best and most accurate resource for updates about your application.`},
     {title:"WHAT'S NEXT", header:"Status Update", content:"An update to your application was last posted on March 20, 2021", page:"/thankyou", navTitle:"View Update >>"}
   ]
 

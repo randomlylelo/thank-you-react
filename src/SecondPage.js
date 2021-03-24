@@ -1,5 +1,5 @@
 import React from "react";
-import {TopBar, BottomBar} from "../src/layout";
+import { TopBar, BottomBar } from "../src/layout";
 import confetti from "./confetti.js";
 
 export default function SecondPage() {
@@ -9,6 +9,7 @@ export default function SecondPage() {
 
       return stop;
   }, []);
+
   return (
     <div className="xl:w-1000 xl:block xl:m-auto xl:bg-grayPc xl:h-screen">
       {/* Skip, DESKTOP ONLY */}

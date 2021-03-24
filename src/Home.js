@@ -5,19 +5,19 @@ import ReactPlayer from 'react-player/youtube'
 
 export default function Home() {
   /*Middle Section Banner Labels */
-  var lbls = [
+  let lbls = [
     {lbl:"Caltech Prefrosh", style:"xl:text-7xl text-4xl text-white w-1/2"},
     {lbl:"Hopes You Accept Our Offer Of Grattitude", style:"xl:text-3xl text-lg mx-2.5 text-black w-1/2"},
   ];
 
   /*Middle Section Information Info */
-  var info = [
-    {title:"CALTHANKS FACULTY PORTAL", header:"Welcome", content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis ex. Nulla a elit non nunc cursus sodales in vel nulla. Aenean fermentum ex pellentesque, gravida diam id, scelerisque mi. Duis rutrum iaculis tristique. Ut elementum velit vitae dolor pulvinar accumsan. Phasellus convallis ornare ornare. Proin gravida condimentum interdum. Nullam iaculis, mauris at gravida pharetra, enim erat maximus est, sed euismod orci sem at nulla. Mauris consequat nec eros a vestibulum. Vivamus metus justo, malesuada aliquet imperdiet id, volutpat eget tellus. Mauris lacus quam, auctor non lacus venenatis, sagittis scelerisque nibh. Nam lobortis nisl et mi suscipit pharetra. Nunc laoreet, nisi eu imperdiet ullamcorper, libero sem tempor metus, non dapibus dolor urna quis massa. Mauris pellentesque enim lectus, at venenatis neque ullamcorper nec. Vestibulum luctus velit sit amet dui varius, vitae ornare purus facilisis. Donec dictum magna neque, vestibulum eleifend sapien eleifend vel. Aenean accumsan leo at maximus viverra. Praesent id accumsan ipsum, ut tristique ligula."},
+  let info = [
+    {title:"CALTHANKS FACULTY PORTAL", header:"Welcome", content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis ex. Nulla a elit non nunc cursus sodales in vel nulla. Aenean fermentum ex pellentesque, gravida diam id, scelerisque mi. Duis rutrum iaculis tristique. Ut elementum velit vitae dolor pulvinar accumsan. Phasellus convallis ornare ornare. Proin gravida condimentum interdum. Nullam iaculis, mauris at gravida pharetra, enim erat maximus est, sed euismod orci sem at nulla. Mauris consequat nec eros a vestibulum. Vivamus metus justo, malesuada aliquet imperdiet id, volutpat eget tellus. Mauris lacus quam, auctor non lacus venenatis, sagittis scelerisque nibh. Nam lobortis nisl et mi suscipit pharetra. Nunc laoreet, nisi eu imperdiet ullamcorper, libero sem tempor metus, non dapibus dolor urna quis massa. Mauris pellentesque enim lectus, at venenatis neque ullamcorper nec. Vestibulum luctus velit sit amet dui letius, vitae ornare purus facilisis. Donec dictum magna neque, vestibulum eleifend sapien eleifend vel. Aenean accumsan leo at maximus viverra. Praesent id accumsan ipsum, ut tristique ligula."},
     {title:"WHAT'S NEXT", header:"Status Update", content:"An update to your application was last posted on March 20, 2021", page:"/thankyou", navTitle:"View Update >>"}
   ]
 
   /*Middle Section Checklist Details/Items */
-  var checkItems = [
+  let checkItems = [
     {name:"One", status:"Recieved", date:"02/12/2021"},
     {name:"One", status:"Recieved", date:"02/12/2021"},
     {name:"One", status:"Recieved", date:"02/12/2021"},

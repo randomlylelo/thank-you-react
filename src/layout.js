@@ -121,7 +121,7 @@ class InfoSection extends Component {
                             <h3 className="font-bold">{info.header}</h3>
                         </li>
                         <li>
-                            <h4>{info.content}</h4>
+                            <h4 className="whitespace-pre-wrap">{info.content}</h4>
                         </li>
                         <NavItem location={info.page} navTitle={info.navTitle}/>
                     </ul>

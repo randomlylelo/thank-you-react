@@ -1,8 +1,9 @@
 // import { useEffect, useState } from "react";
 import React from "react";
-import {TopBar, BottomBar, MidSection} from "../src/layout";
-export default function Home() {
+import { TopBar, BottomBar, MidSection } from "../src/layout";
+import ReactPlayer from 'react-player'
 
+export default function Home() {
   /*Middle Section Banner Labels */
   var lbls = [
     {lbl:"Caltech Prefrosh", style:"xl:text-7xl text-4xl text-white w-1/2"},
@@ -34,7 +35,7 @@ export default function Home() {
       {/* Skip, DESKTOP ONLY */}
       <div className="xl:h-12 xl:w-full" />
       <TopBar/>
-      <MidSection bannerLabels={lbls} infoArray={info} checkItems={checkItems} title="Application Status for All Faculty"/>
+      <MidSection bannerLabels={lbls} infoArray={info} checkItems={checkItems} title="Application Status for All Faculty" />
       <BottomBar name="California Institute of Technology" address="1200 E California Blvd, Pasadena CA 91125"/>
     </div>
           

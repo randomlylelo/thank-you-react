@@ -24,7 +24,7 @@ export default function Home() {
     {name:"One", status:"Recieved", date:"02/12/2021"},
   ];
 
-  let video =  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/>
+  let video =  <ReactPlayer url='https://youtu.be/ID_L0aGI9bg' controls={true}/>
 
   //  We using xl for switch into responsive. XL is 1280px
   return (

@@ -1,37 +1,15 @@
-// import { useEffect, useState } from "react";
 import React from "react";
-import Main from "./main";
+import { Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import SecondPage from "./SecondPage";
 
 export default function App() {
-  /* Ignore
-  const greetings = [
-    {id:1, title:"Thankyou"},
-    {id:2, title:"For"},
-    {id:3, title:"All Of Your Hard Work"}
-  ];
-
-  const [index, setIndexVal] = useState(0);
-  useEffect(() => {
-    setInterval(() => {
-      setIndexVal((prevIndex) => {
-        if(prevIndex === 2) {
-          return 0;
-        } else {
-          return prevIndex += 1;
-        }
-      })
-
-    
-    }, 3000);
-  }, []);
-  */
-
-  //  We using xl for switch into responsive. XL is 1280px
   return (
-    // Container
-    // Remove "xl:h-screen" if you add more info and the background messes up or smthing not sure.
     <div>
-      <Main />
+      <Switch>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/thankyou" component={SecondPage}></Route>
+      </Switch>
     </div>
   );
 }

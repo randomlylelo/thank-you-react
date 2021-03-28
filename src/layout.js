@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import checkPng from "../src/check.png";
 
 export class TopBar extends Component {
@@ -33,6 +33,8 @@ export class TopBar extends Component {
                             <span className="text-white text-xs">You :)</span>
                             <a
                                 href="https://youtu.be/dQw4w9WgXcQ"
+                                rel="noopener noreferrer"
+                                target="_blank"
                                 className="text-xxs pl-1.25 text-linkRed visited:text-linkBlue"
                             >
                                 Logout
@@ -96,9 +98,9 @@ class NavItem extends Component {
                 <nav>
                     <ul>
                         <li>
-                        <Link to={this.props.location} className="text-orange">
+                        <a href={this.props.location} className="text-orange" rel="noopener noreferrer" target="_blank">
                             {this.props.navTitle}
-                        </Link>
+                        </a>
                         </li>
                     </ul>
                 </nav>

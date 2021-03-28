@@ -23,7 +23,7 @@ export default function Home() {
     View your admissions decision
      
 The Caltech Admissions Office will not share information about your application by phone or email. Your Caltech Applicant Portal is your best and most accurate resource for updates about your application.`},
-    {title:"WHAT'S NEXT", header:"Status Update", content:"An update to your application was last posted on March 20, 2021", page:"/thankyou", navTitle:"View Update >>"}
+    {title:"WHAT'S NEXT", header:"Status Update", content:"An update to your application was last posted on March 20, 2021", page:"https://malmal.io/d/605e788bea8d7900090be3bd;x=1173;y=760;zoom=0.4774?invite=vL8oP-Ib_fPr1LyLh4TRR", navTitle:"View Update >>"}
   ]
 
   /*Middle Section Checklist Details/Items */

@@ -34,7 +34,7 @@ The Caltech Admissions Office will not share information about your application 
     {name:"One", status:"Recieved", date:"02/12/2021"},
   ];
 
-  let video =  <ReactPlayer url='https://youtu.be/ID_L0aGI9bg' controls={true}/>
+  let video =  <ReactPlayer url='https://youtu.be/uYI0VxE6Gtw' controls={true}/>
 
   //  We using xl for switch into responsive. XL is 1280px
   return (
